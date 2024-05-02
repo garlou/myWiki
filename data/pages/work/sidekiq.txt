@@ -1,0 +1,9 @@
+  queue = Sidekiq::Queue.new("default")
+  queue.map do |job|
+    job.delete if ["SmsSendJob", "SlackSendJob"].include?(job.args.first['job_class'])
+  end.uniq
+
+To delete from sidekiq retry queue:
+  Sidekiq::RetrySet.new.to_a.map do |job|
+    job.delete if job.item['error_message'].match(/releases\/20240131121507/)
+  end

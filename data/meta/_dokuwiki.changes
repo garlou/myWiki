@@ -1,0 +1,31 @@
+1714685871	192.168.167.1	C	start		created		15
+1714686642	192.168.167.1	E	start				13
+1714686737	192.168.167.1	C	work:page		created		1271
+1714686977	192.168.167.1	E	work:page				127
+1714687510	192.168.167.1	E	start				28
+1714687528	192.168.167.1	C	work:work		created		7
+1714687588	192.168.167.1	E	start				0
+1714687658	192.168.167.1	E	start				2
+1714687686	192.168.167.1	C	work:psql		dump restore psql postgres heroku database brotli compression zip		1398
+1714687703	192.168.167.1	E	start				-30
+1714687786	192.168.167.1	E	start		delete jobs sidekiq queue		35
+1714687818	192.168.167.1	C	work:sidekiq		created		321
+1714687950	192.168.167.1	E	start				64
+1714688031	192.168.167.1	E	start		osx timezone time zone change		41
+1714688051	192.168.167.1	C	work:osx		created		120
+1714688144	192.168.167.1	E	start		ruby rails discount code unique generation		47
+1714688163	192.168.167.1	C	work:rails		created		156
+1714688216	192.168.167.1	E	start				72
+1714688232	192.168.167.1	E	start				1
+1714688279	192.168.167.1	E	start				-1
+1714688354	192.168.167.1	E	start				-16
+1714688391	192.168.167.1	C	work:psql2		psql postgres temp table insert		377
+1714688514	192.168.167.1	E	work:psql2		psql postgres temp table insert		-26
+1714688644	192.168.167.1	E	start				49
+1714688793	192.168.167.1	E	work:psql				0
+1715080881	192.168.167.1	E	start		[Rails] 		59
+1715080901	192.168.167.1	E	start		[Rails] 		2
+1715080921	192.168.167.1	E	start		[Rails] 		11
+1715080948	192.168.167.1	E	start		[Rails] 		0
+1715080985	192.168.167.1	C	work:assoc_partner_dc		created		320
+1715081025	192.168.167.1	E	work:assoc_partner_dc				31

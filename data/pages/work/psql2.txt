@@ -1,0 +1,17 @@
+  drop TABLE if EXISTS temp_cities;
+  CREATE TEMP TABLE temp_cities
+    (
+      mail VARCHAR(80)
+    )
+  ON COMMIT PRESERVE ROWS;
+  
+  BEGIN TRANSACTION;
+  
+  INSERT INTO temp_cities VALUES ('carlos.joaquim@asdsadasd.pt'), ('ana.matos@sadasdsadad.pt');
+  
+  SELECT COUNT(*) FROM temp_cities;
+  -- Result: 3
+  
+  COMMIT;
+  
+  SELECT * FROM temp_cities;

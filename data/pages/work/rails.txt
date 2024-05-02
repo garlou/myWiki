@@ -1,0 +1,5 @@
+  (1..250).map do
+    code = SecureRandom.hex(4).upcase
+    code = SecureRandom.hex(4).upcase while DiscountCode.unscoped.exists?(code: code)
+    code
+  end

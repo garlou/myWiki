@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/docuwiki
+    command: php -S 0.0.0.0:80
+    ports:
+      - 80:80

@@ -1,0 +1,5 @@
+  sudo systemsetup -listtimezones | more 
+
+  sudo systemsetup -settimezone America/Adak
+
+  sudo systemsetup -gettimezone

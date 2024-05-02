@@ -1,0 +1,36 @@
+Create dump:
+  heroku pg:backups capture --app turismo-fb
+  pg_dump -Fc mydb > db.dump
+  pg_dump -Fc --no-acl --no-owner -h localhost --port=PORT --schema=public -U username mydb > mydb.dump
+    --schema=public --exclude-table-data 'public.*versions' --exclude-table-data 'public.*_logs'
+  pg_dump --schema-only -d mydb > mydb.sql
+
+Download dump:
+  curl -o latest.dump `heroku pg:backups public-url --app turismo-fb`
+
+Restore:
+  pg_restore --if-exists --verbose --clean --no-acl --no-owner -h localhost -d my_db db/latest.dump
+  gunzip -c latest.dump.sql.gz | psql my_db
+  brotli -dc latest.dump.sql.br | psql my_db
+
+Restore on heroku:
+  heroku pg:backups:restore 'https://s3.amazonaws.com/me/items/3H0q/mydb.dump' DATABASE_URL --app app-name
+
+ZIP
+  zip -s 700m 20230505_1144.dump.zip 20230505_1144.dump
+
+BROTLI
+Compress a file, creating a compressed version next to the file:
+  brotli {{path/to/file}}
+
+Decompress a file, creating an uncompressed version next to the file:
+  brotli -d {{path/to/file.br}}
+
+Compress a file specifying the output filename:
+  brotli {{path/to/file}} -o {{path/to/compressed_output_file.br}}
+
+Decompress a Brotli file specifying the output filename:
+  brotli -d {{path/to/compressed_file.br}} -o {{path/to/output_file}}
+
+Specify the compression level [1=Fastest (Worst), 11=Slowest (Best)]:
+  brotli -q {{11}} {{path/to/file}} -o {{path/to/compressed_output_file.br}}

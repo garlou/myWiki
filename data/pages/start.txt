@@ -1,0 +1,10 @@
+==== PostgreSQL ====
+[[work:psql#psql|Back up and restore from heroku to local]]\\
+[[work:psql2#psql|Insert into temp table]]\\
+==== Sidekiq ====
+[[work:sidekiq#sidekiq|Delete jobs from sidekiq queue]]\\
+==== OSX ====
+[[work:osx#osx|Change timezone on OSX]]\\
+==== Rails ====
+[[work:rails#rails|Generate discount codes]]\\
+[[work:assoc_partner_dc#rails|Associate discount codes to a partner]]

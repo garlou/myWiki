@@ -1,0 +1,14 @@
+  INSERT INTO "public"."trackings" ("partner_id", "discount_code_id", "tracking_type", "created_at", "updated_at")
+  SELECT
+    27365 AS partner_id,
+    id,
+    'discount_code' AS tracking_type,
+    now(),
+    now()
+  FROM
+    discount_codes
+  WHERE
+    organization_id = 28
+    AND "code" in ('GBTX226', 'GBTX204',...'GBTX692')
+  ORDER BY
+    "code"
