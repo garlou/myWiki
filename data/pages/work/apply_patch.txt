@@ -1,0 +1,11 @@
+To check if the patch will produce errors
+
+  git apply --check fix_video_validation.patch
+
+This command will apply the patch not resolving it leaving bad files as *.rej:
+
+  git apply --reject --whitespace=fix mypath.patch
+
+You just have to resolve them. Once resolved run:
+
+  git -am resolved

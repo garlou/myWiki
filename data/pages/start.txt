@@ -8,3 +8,6 @@
 ==== Rails ====
 [[work:rails#rails|Generate discount codes]]\\
 [[work:assoc_partner_dc#rails|Associate discount codes to a partner]]
+==== GIT ====
+[[work:delete_git_tag_origin#git|Delete tag in origin]]\\
+[[work:apply_patch#git|Apply git patch]]\\

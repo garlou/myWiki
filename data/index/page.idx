@@ -10,3 +10,5 @@ work:osx
 work:rails
 work:psql2
 work:assoc_partner_dc
+work:delete_git_tag_origin
+work:apply_patch
