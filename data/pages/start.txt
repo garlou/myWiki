@@ -7,7 +7,8 @@
 [[work:osx#osx|Change timezone on OSX]]\\
 ==== Rails ====
 [[work:rails#rails|Generate discount codes]]\\
-[[work:assoc_partner_dc#rails|Associate discount codes to a partner]]
+[[work:assoc_partner_dc#rails|Associate discount codes to a partner]]\\
+[[work:conn_tunneled_db#rails|Connect a local console to a ssh tunneled database]]\\
 ==== GIT ====
 [[work:delete_git_tag_origin#git|Delete tag in origin]]\\
 [[work:apply_patch#git|Apply git patch]]\\

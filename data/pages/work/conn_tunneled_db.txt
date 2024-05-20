@@ -1,0 +1,8 @@
+Add databse configurations to .env file
+  DATABASE_URL=postgres://app:PASSWORD@localhost:5433/medicalcard
+  READ_REPLICA_DATABASE_URL=postgres://app:PASSWORD@localhost:5433/medicalcard
+  AIRBYTE_DATABASE_URL=postgres://app:PASSWORD@localhost:5433/medicalcard
+
+
+Create a ssh tunnel on port 5433
+  ssh -L 5433:medicalcard-postgresql.cluster-cfhmfvipowii.us-east-1.rds.amazonaws.com:5432 ubuntu@3.82.238.235
