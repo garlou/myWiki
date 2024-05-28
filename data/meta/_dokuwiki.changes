@@ -1,5 +1,3 @@
-1714688144	192.168.167.1	E	start		ruby rails discount code unique generation		47
-1714688163	192.168.167.1	C	work:rails		created		156
 1714688216	192.168.167.1	E	start				72
 1714688232	192.168.167.1	E	start				1
 1714688279	192.168.167.1	E	start				-1
@@ -20,3 +18,5 @@
 1715167486	192.168.167.1	C	work:apply_patch		created		293
 1716197951	192.168.167.1	E	start		[Rails] 		87
 1716198091	192.168.167.1	C	work:conn_tunneled_db		created		404
+1716454475	192.168.167.1	E	start				85
+1716454745	192.168.167.1	C	work:install_win11_usb		created		2075

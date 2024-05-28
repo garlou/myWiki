@@ -12,3 +12,5 @@
 ==== GIT ====
 [[work:delete_git_tag_origin#git|Delete tag in origin]]\\
 [[work:apply_patch#git|Apply git patch]]\\
+==== Windows ====
+[[work:install_win11_usb#git|Install Windows 11 with a usb pen]]\\

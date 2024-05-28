@@ -1,0 +1,40 @@
+If you prefer to do this manually, you can use diskpart from the Windows setup command line to copy the setup/installation files from the USB to the local drive and then use the local drive to both boot from and install to, bypassing the USB completely and preventing Windows from getting confused:
+
+Press Shift+F10 at the dialog where you see the error message in question to bring up a command line console.
+In the console, type diskpart.exe and press enter.
+Now type in the following within diskpart:
+list disk (and make note of the disk number to install Windows to)
+  select disk=0 (where disk 0 is your destination drive, so be careful, all information on this drive will be removed)
+  clean
+  convert mbr
+  create partition primary size=xxx (where xxx – is the size of new partition)
+  select partition=1
+  active
+  format fs=ntfs quick
+  assign
+  exit
+Use wmic logicaldisk get caption to list all your drives
+Navigate to USB flash drive, for example: d: (your USB-Drive contains a boot folder)
+  cd d:
+Copy all files from USB drive to C: drive: 
+  xcopy d: c: /e /h /k
+Make your C: drive bootable with following command:
+  bootsect /nt60 c: 
+  bootsect /nt60 c:  /mbr
+Eject the USB drive from your computer, and restart
+Boot back into Windows setup and select “Install Now”
+Once the Windows installation has completed, use this guide to remove the “Windows Setup” option when you boot your computer, if necessary:
+
+Using the msconfig utility tool allows you to select which version of Windows you’d like to boot directly into when you restart your computer.
+
+Follow these steps:
+  - Click Start
+  - Type msconfig in the search box or open Run
+  - Go to Boot
+  - Select which Windows version you’d like to boot into directly
+  - Press Set as Default
+  - You can delete the earlier version by selecting it and then clicking Delete
+  - Click Apply
+  - Click OK
+  - Restart your computer
+If you choose to delete a version from the Boot tab of msconfig, that Windows version won’t be deleted, but it won’t be displayed on the Windows Boot Manager screen.

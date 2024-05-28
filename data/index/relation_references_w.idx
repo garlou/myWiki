@@ -17,3 +17,4 @@ work:assoc_partner_dc
 work:delete_git_tag_origin
 work:apply_patch
 work:conn_tunneled_db
+work:install_win11_usb
