@@ -5,6 +5,15 @@ Create dump:
     --schema=public --exclude-table-data 'public.*versions' --exclude-table-data 'public.*_logs'
   pg_dump --schema-only -d mydb > mydb.sql
 
+For TablePLus
+  // Add this to backup options list
+  --Fc
+  --no-acl 
+  --no-owner 
+  --schema=public
+  --exclude-table-data 'public.*versions' 
+  --exclude-table-data 'public.*_logs'
+
 Download dump:
   curl -o latest.dump `heroku pg:backups public-url --app turismo-fb`
 

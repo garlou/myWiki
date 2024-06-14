@@ -1,5 +1,3 @@
-1714688216	192.168.167.1	E	start				72
-1714688232	192.168.167.1	E	start				1
 1714688279	192.168.167.1	E	start				-1
 1714688354	192.168.167.1	E	start				-16
 1714688391	192.168.167.1	C	work:psql2		psql postgres temp table insert		377
@@ -20,3 +18,6 @@
 1716198091	192.168.167.1	C	work:conn_tunneled_db		created		404
 1716454475	192.168.167.1	E	start				85
 1716454745	192.168.167.1	C	work:install_win11_usb		created		2075
+1718360132	192.168.247.1	E	work:assoc_partner_dc				199
+1718360951	192.168.247.1	E	start				18
+1718363475	192.168.247.1	E	work:psql				185

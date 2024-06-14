@@ -1,3 +1,4 @@
+Type: Discount 
   INSERT INTO "public"."trackings" ("partner_id", "discount_code_id", "tracking_type", "created_at", "updated_at")
   SELECT
     27365 AS partner_id,
@@ -12,3 +13,7 @@
     AND "code" in ('GBTX226', 'GBTX204',...'GBTX692')
   ORDER BY
     "code"
+
+Type: Discount Group
+  INSERT INTO "public"."trackings" ("partner_id", "tracking_type", "created_at", "updated_at", "discount_group_id")
+		VALUES(27365, 'dc_group', now(), now(), 1);
