@@ -4,10 +4,19 @@ Create dump:
   pg_dump -Fc --no-acl --no-owner -h localhost --port=PORT --schema=public -U username mydb > mydb.dump
     --schema=public --exclude-table-data 'public.*versions' --exclude-table-data 'public.*_logs'
   pg_dump --schema-only -d mydb > mydb.sql
+  
+Via tunneling
+== Staging == 
+  sudo ssh -N -v -L 9001:medicalcard-postgresql.cluster-cfhmfvipowii.us-east-1.rds.amazonaws.com:5432  -i ~/Documents/PROJECTS/Telehealth/certificates/metabase-production.pem ubuntu@3.82.238.235
+  pg_dump -Fc --no-acl --no-owner -h localhost --port=9001 --schema=public -U app medicalcard > medicalcard_staging_test.dump --schema=public --exclude-table-data 'public.*versions' --exclude-table-data 'public.*_logs'
+
+== Production == 
+  sudo ssh -N -v -L 9001:medicalcard-postgresql.cluster-cxv9vchgzgjp.us-east-1.rds.amazonaws.com:5432  -i ~/Documents/PROJECTS/Telehealth/certificates/metabase-production.pem ubuntu@3.82.238.235
+  pg_dump -Fc --no-acl --no-owner -h localhost --port=9001 --schema=public -U app medicalcard > medicalcard_prod_test_1.dump --schema=public --exclude-table-data 'public.*versions' --exclude-table-data 'public.*_logs'
 
 For TablePLus
   // Add this to backup options list
-  --Fc
+  -Fc
   --no-acl 
   --no-owner 
   --schema=public
