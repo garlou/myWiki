@@ -1,0 +1,32 @@
+    Organization.all.map do |org|
+      puts 'UPDATE organizations set ' \
+          "active = #{org.active_before_type_cast.to_s.presence || 'null'}," \
+          "has_scheduling = #{org.has_scheduling_before_type_cast.to_s.presence || 'null'}," \
+          "has_waiting_room = #{org.has_waiting_room_before_type_cast.to_s.presence || 'null'}," \
+          "minor_age_limit = #{org.minor_age_limit_before_type_cast.to_s.presence || 'null'}," \
+          "consultation_method = #{org.consultation_method_before_type_cast || 'null'}," \
+          "renewals_consultation_method = #{org.renewals_consultation_method_before_type_cast || 'null'}," \
+          "time_zone = '#{org.time_zone_before_type_cast.to_s.presence || 'null'}'," \
+          "only_renewals = #{org.only_renewals_before_type_cast.to_s.presence || 'null'}," \
+          "days_to_renew = #{org.days_to_renew_before_type_cast}," \
+          "require_patient_number = '#{org.require_patient_number_before_type_cast.to_s.presence || 'null'}'," \
+          "require_patient_ss_number = '#{org.require_patient_ss_number_before_type_cast.to_s.presence || 'null'}'," \
+          "medical_records_requirement = '#{org.medical_records_requirement_before_type_cast.to_s.presence || 'null'}'," \
+          "require_driver_license = '#{org.require_driver_license_before_type_cast.to_s.presence || 'null'}'," \
+          "different_state_address = '#{org.different_state_address_before_type_cast.to_s.presence || 'null'}'," \
+          "require_caregiver_email = '#{org.require_caregiver_email_before_type_cast.to_s.presence || 'null'}'," \
+          "require_caregiver_driver_license = '#{org.require_caregiver_driver_license_before_type_cast.to_s.presence || 'null'}'," \
+          "require_caregiver_address = '#{org.require_caregiver_address_before_type_cast.to_s.presence || 'null'}'," \
+          "require_caregiver_phone = '#{org.require_caregiver_phone_before_type_cast.to_s.presence || 'null'}'," \
+          "id_document_option = '#{org.id_document_option_before_type_cast.to_s.presence || 'null'}'," \
+          "help_link = '#{org.help_link_before_type_cast.to_s.presence || 'null'}'," \
+          "help_link_renewal = '#{org.help_link_renewal_before_type_cast.to_s.presence || 'null'}'," \
+          "review_url = '{#{('"' + org.review_url.join('", "') + '"').gsub('\\', '')}}'," \
+          "notice = '#{org.notice_before_type_cast.to_s.presence&.gsub("'", "''") || 'null'}'," \
+          "certification_age_limit = #{org.certification_age_limit_before_type_cast.to_s.presence || 'null'}," \
+          "certification_age_limit_notice = '#{org.certification_age_limit_notice_before_type_cast.to_s.presence || 'null'}'," \
+          "dashboard_content = '#{org.dashboard_content_before_type_cast.to_s.presence&.gsub("'", "''") || 'null'}'," \
+          "certificate_method = #{org.certificate_method_before_type_cast.to_s.presence || 'null'} where code = '#{org.code}';"
+        .gsub("'null'", 'null')
+      nil
+    end

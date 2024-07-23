@@ -1,12 +1,3 @@
-1714688644	192.168.167.1	E	start				49
-1714688793	192.168.167.1	E	work:psql				0
-1715080881	192.168.167.1	E	start		[Rails] 		59
-1715080901	192.168.167.1	E	start		[Rails] 		2
-1715080921	192.168.167.1	E	start		[Rails] 		11
-1715080948	192.168.167.1	E	start		[Rails] 		0
-1715080985	192.168.167.1	C	work:assoc_partner_dc		created		320
-1715081025	192.168.167.1	E	work:assoc_partner_dc				31
-1715167401	192.168.167.1	E	start				72
 1715167426	192.168.167.1	E	start		[GIT] 		43
 1715167443	192.168.167.1	C	work:delete_git_tag_origin		created		34
 1715167486	192.168.167.1	C	work:apply_patch		created		293
@@ -19,3 +10,13 @@
 1718363475	192.168.247.1	E	work:psql				185
 1718708690	192.168.247.1	E	work:psql				-1
 1718727834	192.168.247.1	E	work:psql				878
+1718788509	192.168.155.1	E	work:psql				495
+1718788523	192.168.155.1	E	work:psql				3
+1718788579	192.168.155.1	E	work:psql				2
+1718959895	192.168.207.1	E	start		[Rails] 		65
+1718959918	192.168.207.1	C	work:create_groupon_partner		created		705
+1718959933	192.168.207.1	E	work:create_groupon_partner				-1
+1720097041	192.168.207.1	E	start		[Rails] 		63
+1720097095	192.168.207.1	C	work:sync_org_settings		created		2984
+1721733693	192.168.237.1	E	start		[Rails] 		70
+1721733833	192.168.237.1	C	work:create_prepaid		created		527

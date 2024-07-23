@@ -1,0 +1,14 @@
+  def create_groupon_arizona
+    parent = Partner.find(26821)
+    raise 'Parent partner not found' unless parent.present? && parent.name.eql?('Leafwell Groupon Campaigns')
+    Partner.transaction do
+      organization = Organization.find_by(name: 'Arizona')
+      partner = Partner.create!(name: 'Groupon Arizona', parent_id: parent.id, is_new: false, fee_type: 1, fee_amount: 35, organization: organization)
+      partner.trackings.create!(tracking_type: 'dc_tag', dc_tag_name: 'groupon_az')
+      category = Category.find_by(name: 'Affiliate Partners')
+      return unless category.present?
+      partner.partner_categories.create(category: category)
+    end
+  rescue StandarError => e
+    puts e
+  end

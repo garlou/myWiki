@@ -10,6 +10,10 @@
 [[work:rails#rails|Generate discount codes]]\\
 [[work:assoc_partner_dc#rails|Associate discount codes to a partner]]\\
 [[work:conn_tunneled_db#rails|Connect a local console to a ssh tunneled database]]\\
+[[work:create_groupon_partner#rails|Create a Groupon partner]]\\
+[[work:create_prepaid#rails|Create a pre-paid bulk certification]]\\
+[[work:sync_org_settings#rails|Sync organizations settings]]\\
+
 ==== GIT ====
 [[work:delete_git_tag_origin#git|Delete tag in origin]]\\
 [[work:apply_patch#git|Apply git patch]]\\

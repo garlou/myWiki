@@ -18,3 +18,6 @@ work:delete_git_tag_origin
 work:apply_patch
 work:conn_tunneled_db
 work:install_win11_usb
+work:create_groupon_partner
+work:sync_org_settings
+work:create_prepaid
