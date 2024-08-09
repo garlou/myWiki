@@ -1,5 +1,6 @@
-  (1..250).map do
+  (1..250).reduce([]) do |codes, i|
     code = SecureRandom.hex(4).upcase
-    code = SecureRandom.hex(4).upcase while DiscountCode.unscoped.exists?(code: code)
-    code
+    code = SecureRandom.hex(4).upcase while DiscountCode.unscoped.exists?(code: code) || codes.include?(code)
+    codes << code
+    codes
   end

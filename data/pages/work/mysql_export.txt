@@ -1,0 +1,6 @@
+  // Flags to include
+  --compress
+  --routines
+  --lock-tables=false
+  --no-data
+  --column-statistics=0

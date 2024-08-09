@@ -2,11 +2,12 @@
   * in partner page associace newly created discount group
   * generate csv with unique discount codes
 
-  (1..100).map do
+  (1..250).reduce([]) do |codes, i|
     code = SecureRandom.hex(4).upcase
-    code = SecureRandom.hex(4).upcase while DiscountCode.unscoped.exists?(code: code)
-    code
+    code = SecureRandom.hex(4).upcase while DiscountCode.unscoped.exists?(code: code) || codes.include?(code)
+    codes << code
+    codes
   end
-
+ 
   * create unique discount codes in newly created discount group with the bulk import csv feature in BO discount codes page
   * create prepaid bulk certification manually in database 

@@ -1,9 +1,3 @@
-1715167426	192.168.167.1	E	start		[GIT] 		43
-1715167443	192.168.167.1	C	work:delete_git_tag_origin		created		34
-1715167486	192.168.167.1	C	work:apply_patch		created		293
-1716197951	192.168.167.1	E	start		[Rails] 		87
-1716198091	192.168.167.1	C	work:conn_tunneled_db		created		404
-1716454475	192.168.167.1	E	start				85
 1716454745	192.168.167.1	C	work:install_win11_usb		created		2075
 1718360132	192.168.247.1	E	work:assoc_partner_dc				199
 1718360951	192.168.247.1	E	start				18
@@ -20,3 +14,12 @@
 1720097095	192.168.207.1	C	work:sync_org_settings		created		2984
 1721733693	192.168.237.1	E	start		[Rails] 		70
 1721733833	192.168.237.1	C	work:create_prepaid		created		527
+1722246236	192.168.237.1	E	work:rails				45
+1722246294	192.168.237.1	E	work:rails				16
+1722876202	192.168.65.1	E	work:create_prepaid				63
+1722876216	192.168.65.1	E	work:create_prepaid				-1
+1723124727	192.168.65.1	E	start				70
+1723124745	192.168.65.1	E	start				8
+1723124780	192.168.65.1	C	work:mysql_export		created		83
+1723124802	192.168.65.1	E	work:mysql_export				5
+1723124862	192.168.65.1	E	work:mysql_export				17

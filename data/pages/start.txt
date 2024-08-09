@@ -1,6 +1,8 @@
 ==== PostgreSQL ====
 [[work:psql#psql|Back up and restore from heroku to local]]\\
 [[work:psql2#psql|Insert into temp table]]\\
+==== MariaDB/MySQL ====
+[[work:mysql_export#mysql|Export MariaDB database]]\\
 ==== Sidekiq ====
 [[work:sidekiq#sidekiq|Delete jobs from sidekiq queue]]\\
 ==== OSX ====
