@@ -1,0 +1,10 @@
+  [
+    '9389c4e9-2d30-4658-bf09-dce02b4b4dea', 
+    'e13caaf8-631a-4c42-a08d-9d499c7b799d'
+  ].each do |uuid|
+    puts "Deleting #{uuid}..."
+    puts HTTParty.delete(
+      "https://new-staging.medicalcard.io/api/registry/#{uuid}",
+      headers: { 'Content-Type': "application/json", 'Authorization': '5885649aa964de852086d5d07b5bd5d0' }
+    ).parsed_response
+  end

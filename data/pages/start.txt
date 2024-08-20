@@ -15,6 +15,7 @@
 [[work:create_groupon_partner#rails|Create a Groupon partner]]\\
 [[work:create_prepaid#rails|Create a pre-paid bulk certification]]\\
 [[work:sync_org_settings#rails|Sync organizations settings]]\\
+[[work:erase_registries#rails|Erase patient registries via rails console]]\\
 
 ==== GIT ====
 [[work:delete_git_tag_origin#git|Delete tag in origin]]\\

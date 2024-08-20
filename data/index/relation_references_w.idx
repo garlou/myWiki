@@ -22,3 +22,4 @@ work:create_groupon_partner
 work:sync_org_settings
 work:create_prepaid
 work:mysql_export
+work:erase_registries
