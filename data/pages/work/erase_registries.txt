@@ -4,7 +4,7 @@
   ].each do |uuid|
     puts "Deleting #{uuid}..."
     puts HTTParty.delete(
-      "https://new-staging.medicalcard.io/api/registry/#{uuid}",
-      headers: { 'Content-Type': "application/json", 'Authorization': '5885649aa964de852086d5d07b5bd5d0' }
+      "https://medicalcard.io/api/registry/#{uuid}",
+      headers: { 'Content-Type': "application/json", 'Authorization': 'abc' }
     ).parsed_response
   end

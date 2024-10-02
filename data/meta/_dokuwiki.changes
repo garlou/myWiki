@@ -1,7 +1,3 @@
-1718727834	192.168.247.1	E	work:psql				878
-1718788509	192.168.155.1	E	work:psql				495
-1718788523	192.168.155.1	E	work:psql				3
-1718788579	192.168.155.1	E	work:psql				2
 1718959895	192.168.207.1	E	start		[Rails] 		65
 1718959918	192.168.207.1	C	work:create_groupon_partner		created		705
 1718959933	192.168.207.1	E	work:create_groupon_partner				-1
@@ -21,3 +17,5 @@
 1724143110	192.168.65.1	E	start		[Rails] 		77
 1724143132	192.168.65.1	C	work:erase_registries		created		355
 1724143159	192.168.65.1	E	work:erase_registries				13
+1724154105	192.168.65.1	E	work:erase_registries				-41
+1727882126	192.168.65.1	E	work:create_prepaid				513
