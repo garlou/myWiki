@@ -1,8 +1,8 @@
   * create a discount group with format #{name of the partner} - #{month} #{year}
-https://medicalcard.io/super_admins/discount_groups
+    * https://medicalcard.io/super_admins/discount_groups
 
   * in partner page associace newly created discount group
-https://medicalcard.io/super_admins/partners
+    * https://medicalcard.io/super_admins/partners
 
   * generate csv with unique discount codes
 
@@ -14,20 +14,19 @@ https://medicalcard.io/super_admins/partners
   end
  
   * create unique discount codes in newly created discount group with the bulk import csv feature in BO discount codes page
-https://medicalcard.io/super_admins/discount_codes/import/bulk
-Status: Enabled
-State: <check state>
-Type: Percentage
-Usage limit: 1
-Tag: partner bulk purchase
-Discount group: <discount group created on step 1>
-Amount: 100
+    * https://medicalcard.io/super_admins/discount_codes/import/bulk
+    * Status: Enabled
+    * State: <check state>
+    * Type: Percentage
+    * Usage limit: 1
+    * Tag: partner bulk purchase
+    * Discount group: <discount group created on step 1>
+    * Amount: 100
 
   * create prepaid bulk certification
-https://medicalcard.io/super_admins/pre_paid_orders/new
-
-Paid: Yes
-Partner: <partner>
-Discount group: <discount group created on step 1>
-Total paid: <specified in story>
-Certificates Amount: <specified in story>
+    * https://medicalcard.io/super_admins/pre_paid_orders/new
+    * Paid: Yes
+    * Partner: <partner>
+    * Discount group: <discount group created on step 1>
+    * Total paid: <specified in story>
+    * Certificates Amount: <specified in story>
