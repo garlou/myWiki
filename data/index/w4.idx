@@ -210,3 +210,6 @@ each
 uuid
 json
 step
+exec
+rake
+anon

@@ -193,3 +193,5 @@ admins
 groups
 status
 orders
+bundle
+docker

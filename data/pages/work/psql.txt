@@ -15,6 +15,10 @@ Via tunneling
   pg_dump -Fc --no-acl --no-owner -h localhost --port=9001 --schema=public -U app medicalcard > medicalcard_prod_june.dump --schema=public
 == Compessed (No low use tables) ==
   pg_dump -Fc --no-acl --no-owner -h localhost --port=9001 --schema=public -U app medicalcard > medicalcard_prod_june_compressed.dump --schema=public --exclude-table-data 'public.*versions'  --exclude-table-data 'public.*_logs' --exclude-table-data 'public.conversations' --exclude-table-data 'public.messages' --exclude-table-data 'public.devices' --exclude-table-data 'public.form_answer_options' --exclude-table-data 'public.form_answers' --exclude-table-data 'public.patient_notes' --exclude-table-data 'public.push_notifications'
+== Anonimize ==
+  bundle exec rake anon dump=telehealth.dump airbyte_dump=airbyte.dump
+  
+  docker-compose run --rm app bundle exec rake anon dump=telehealth.dump airbyte_dump=airbyte.dump
 
 For TablePLus
   // Add this to backup options list
