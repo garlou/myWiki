@@ -19,3 +19,4 @@ work:sync_org_settings
 work:create_prepaid
 work:mysql_export
 work:erase_registries
+work:change_sound_output_shortcut

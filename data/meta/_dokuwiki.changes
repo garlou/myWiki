@@ -1,4 +1,3 @@
-1718959933	192.168.207.1	E	work:create_groupon_partner				-1
 1720097041	192.168.207.1	E	start		[Rails] 		63
 1720097095	192.168.207.1	C	work:sync_org_settings		created		2984
 1721733693	192.168.237.1	E	start		[Rails] 		70
@@ -19,3 +18,5 @@
 1727882126	192.168.65.1	E	work:create_prepaid				513
 1727965314	192.168.65.1	E	work:create_prepaid				95
 1728980705	192.168.65.1	E	work:psql		[Production] 		189
+1730714225	192.168.65.1	E	start		[OSX] 		98
+1730714318	192.168.65.1	C	work:change_sound_output_shortcut		created		720

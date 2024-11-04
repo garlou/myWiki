@@ -7,6 +7,7 @@
 [[work:sidekiq#sidekiq|Delete jobs from sidekiq queue]]\\
 ==== OSX ====
 [[work:osx#osx|Change timezone on OSX]]\\
+[[work:change sound output shortcut#change sound output shortcut|Change sound output shortcut]]\\
 ==== Rails ====
 == MedicalCard ==
 [[work:rails#rails|Generate discount codes]]\\

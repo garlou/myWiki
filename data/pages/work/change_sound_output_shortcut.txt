@@ -1,0 +1,15 @@
+Install switchaudio-osx via Homebrew, i.e., brew install switchaudio-osx.
+
+Use SwitchAudioSource -a in the terminal to see the available audio options for your Mac.
+
+Then, do the following
+
+  - Open Shortcuts app
+  - Create New Shortcut
+  - In the search bar type "script"
+  - Select "Run Shell Script" option
+  - In the script box, type /opt/homebrew/bin/SwitchAudioSource -s 'YourAudioSource' and replace your YourAudioSource with an audio source of your choice (use output from SwitchAudioSource -a as reference). See example below for 'MacBook Pro Speakers'
+  - MacOS Shortcuts for Run Shell Script
+  - 
+  - Go to Shortcut Details tab and assign a keyboard shortcut like shown below.
+  - enter image description here
