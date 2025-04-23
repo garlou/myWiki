@@ -198,3 +198,4 @@ docker
 script
 choice
 traces
+events

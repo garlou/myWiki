@@ -13,8 +13,8 @@ Via tunneling
 ==== Production ====
   sudo ssh -N -v -L 9001:medicalcard-postgresql.cluster-cxv9vchgzgjp.us-east-1.rds.amazonaws.com:5432  -i ~/Documents/PROJECTS/Telehealth/certificates/metabase-production.pem ubuntu@3.82.238.235
   pg_dump -Fc --no-acl --no-owner -h localhost --port=9001 --schema=public -U app medicalcard > medicalcard_prod_june.dump --schema=public
-== Compessed (No low use tables) ==
-  pg_dump -Fc --no-acl --no-owner -h localhost --port=9001 --schema=public -U app medicalcard > medicalcard_prod_june_compressed.dump --schema=public --exclude-table-data 'public.*versions'  --exclude-table-data 'public.*_logs' --exclude-table-data 'public.conversations' --exclude-table-data 'public.messages' --exclude-table-data 'public.devices' --exclude-table-data 'public.form_answer_options' --exclude-table-data 'public.form_answers' --exclude-table-data 'public.patient_notes' --exclude-table-data 'public.push_notifications' --exclude-table-data 'public.encrypted_credentials' --exclude-table-data 'public.tracking_traces' --exclude-table-data 'public.clinicians_patient_list_mat'
+== Compressed (No low use tables) ==
+  pg_dump -Fc --no-acl --no-owner -h localhost --port=9001 --schema=public -U app medicalcard > medicalcard_prod_june_compressed.dump --schema=public --exclude-table-data 'public.*versions'  --exclude-table-data 'public.*_logs' --exclude-table-data 'public.conversations' --exclude-table-data 'public.messages' --exclude-table-data 'public.devices' --exclude-table-data 'public.form_answer_options' --exclude-table-data 'public.form_answers' --exclude-table-data 'public.patient_notes' --exclude-table-data 'public.push_notifications' --exclude-table-data 'public.encrypted_credentials' --exclude-table-data 'public.tracking_traces' --exclude-table-data 'public.clinicians_patient_list_mat' --exclude-table-data 'public.field_test_*'
 
 == Anonimize ==
   bundle exec rake anon dump=telehealth.dump airbyte_dump=airbyte.dump
@@ -43,6 +43,9 @@ Restore on heroku:
 
 ZIP
   zip -s 900m 20230505_1144.dump.zip 20230505_1144.dump
+  
+With password
+  zip -e airbyte.zip airbyte.dump
 
 BROTLI
 Compress a file, creating a compressed version next to the file:

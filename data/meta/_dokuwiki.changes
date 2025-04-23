@@ -1,11 +1,3 @@
-1722246236	192.168.237.1	E	work:rails				45
-1722246294	192.168.237.1	E	work:rails				16
-1722876202	192.168.65.1	E	work:create_prepaid				63
-1722876216	192.168.65.1	E	work:create_prepaid				-1
-1723124727	192.168.65.1	E	start				70
-1723124745	192.168.65.1	E	start				8
-1723124780	192.168.65.1	C	work:mysql_export		created		83
-1723124802	192.168.65.1	E	work:mysql_export				5
 1723124862	192.168.65.1	E	work:mysql_export				17
 1724143110	192.168.65.1	E	start		[Rails] 		77
 1724143132	192.168.65.1	C	work:erase_registries		created		355
@@ -21,3 +13,10 @@
 1744019321	172.19.0.1	E	work:psql				57
 1744019338	172.19.0.1	E	work:psql				3
 1744019361	172.19.0.1	E	work:psql				-1
+1744019406	127.0.0.1	E	start		external edit		0
+1744019408	127.0.0.1	E	work:psql		external edit		0
+1744722988	172.19.0.1	E	start				44
+1744723089	172.19.0.1	C	work:zrok		created		140
+1744724361	172.19.0.1	E	work:psql				51
+1745408812	172.19.0.1	E	work:psql				101
+1745408876	172.19.0.1	E	work:psql				-57
